@@ -30,25 +30,6 @@ namespace Tema2_FormatoTexto
             CuadroAmarillo_TextBlock.Text = TextUsuario_TextBox.Text;
         }
 
-        private void Negrita_CheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-            CheckBox checkBox = new CheckBox();
-            
-            if ()
-                CuadroAmarillo_TextBlock.FontWeight = FontWeights.Bold;
-            else
-                CuadroAmarillo_TextBlock.FontWeight = FontWeights.Normal;
-            
-        }
-
-        private void Cursiva_CheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-            if(Cursiva_CheckBox.IsChecked == true)
-                CuadroAmarillo_TextBlock.FontStyle = FontStyles.Italic;
-            else
-                CuadroAmarillo_TextBlock.FontStyle = FontStyles.Normal;
-        }
-
         private void Azul_Radio_Checked(object sender, RoutedEventArgs e)
         {
             CuadroAmarillo_TextBlock.Foreground = Brushes.Blue;
@@ -62,6 +43,22 @@ namespace Tema2_FormatoTexto
         private void Verde_Radio_Checked(object sender, RoutedEventArgs e)
         {
             CuadroAmarillo_TextBlock.Foreground = Brushes.Green;
+        }
+
+        private void CheckBox_Click_Negrita(object sender, RoutedEventArgs e)
+        {
+            if (Negrita_CheckBox.IsChecked == false)
+                CuadroAmarillo_TextBlock.FontWeight = FontWeights.Normal;
+           else
+                CuadroAmarillo_TextBlock.FontWeight = FontWeights.Bold;
+        }
+
+        private void CheckBox_Click_Cursiva(object sender, RoutedEventArgs e)
+        {
+            if (Cursiva_CheckBox.IsChecked == false)
+                CuadroAmarillo_TextBlock.FontStyle = FontStyles.Normal;
+            else
+              CuadroAmarillo_TextBlock.FontStyle = FontStyles.Italic;
         }
     }
 }
