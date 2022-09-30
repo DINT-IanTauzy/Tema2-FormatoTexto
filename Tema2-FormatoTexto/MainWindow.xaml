@@ -14,8 +14,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="550,79,0,0" TextWrapping="Wrap" Text="Color de Texto" VerticalAlignment="Top" FontSize="14"/>
         <RadioButton x:Name="Azul_Radio" Content="Azul" HorizontalAlignment="Left" Margin="681,57,0,0" VerticalAlignment="Top" FontSize="14" Checked="Azul_Radio_Checked" GroupName="Colores"/>
         <RadioButton x:Name="Rojo_Radio" Content="Rojo" HorizontalAlignment="Left" Margin="681,84,0,0" VerticalAlignment="Top" FontSize="14" Checked="Rojo_Radio_Checked" GroupName="Colores"/>
-        <RadioButton x:Name="Verde_Radio" Content="Verde" HorizontalAlignment="Left" Margin="681,116,0,0" VerticalAlignment="Top" FontSize="14" Checked="Verde_Radio_Checked" IsThreeState="True" GroupName="Colores"/>
-        <TextBlock x:Name="CuadroAmarillo_TextBlock" HorizontalAlignment="Left" Margin="69,202,0,41" TextWrapping="Wrap" VerticalAlignment="Center" Height="47" Width="678" Background="#FFF3EFC7" FontSize="14" TextAlignment="Center"/>
+        <RadioButton x:Name="Verde_Radio" Content="Verde" HorizontalAlignment="Left" Margin="681,116,0,0" VerticalAlignment="Top" FontSize="14" Checked="Verde_Radio_Checked" GroupName="Colores"/>
+        <TextBlock x:Name="CuadroAmarillo_TextBlock" HorizontalAlignment="Left" Margin="69,202,0,41" VerticalAlignment="Center" Height="47" Width="678" Background="#FFF3EFC7" FontSize="14" TextAlignment="Center" TextTrimming="CharacterEllipsis"/>
 
     </Grid>
 </Window>

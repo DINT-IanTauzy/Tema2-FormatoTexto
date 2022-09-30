@@ -23,6 +23,7 @@ namespace Tema2_FormatoTexto
         public MainWindow()
         {
             InitializeComponent();
+            Azul_Radio.IsChecked = true;
         }
 
         private void TextUsuario_TextBox_TextChanged(object sender, TextChangedEventArgs e)
