@@ -46,20 +46,25 @@ namespace Tema2_FormatoTexto
             CuadroAmarillo_TextBlock.Foreground = Brushes.Green;
         }
 
-        private void CheckBox_Click_Negrita(object sender, RoutedEventArgs e)
+
+        private void CheckedNegrita(object sender, RoutedEventArgs e)
         {
-            if (Negrita_CheckBox.IsChecked == false)
-                CuadroAmarillo_TextBlock.FontWeight = FontWeights.Normal;
-           else
-                CuadroAmarillo_TextBlock.FontWeight = FontWeights.Bold;
+            CuadroAmarillo_TextBlock.FontWeight = FontWeights.Bold;
         }
 
-        private void CheckBox_Click_Cursiva(object sender, RoutedEventArgs e)
+        private void UnCheckedNegrita(object sender, RoutedEventArgs e)
         {
-            if (Cursiva_CheckBox.IsChecked == false)
-                CuadroAmarillo_TextBlock.FontStyle = FontStyles.Normal;
-            else
-              CuadroAmarillo_TextBlock.FontStyle = FontStyles.Italic;
+            CuadroAmarillo_TextBlock.FontWeight = FontWeights.Normal;
+        }
+
+        private void CheckedCursiva(object sender, RoutedEventArgs e)
+        {
+            CuadroAmarillo_TextBlock.FontStyle = FontStyles.Italic;
+        }
+
+        private void UnCheckedCursiva(object sender, RoutedEventArgs e)
+        {
+            CuadroAmarillo_TextBlock.FontStyle = FontStyles.Normal;
         }
     }
 }

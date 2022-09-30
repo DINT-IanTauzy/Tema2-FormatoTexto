@@ -9,8 +9,8 @@
     <Grid Height="290" VerticalAlignment="Top" Margin="0,0,0,-1">
         <TextBox x:Name="TextUsuario_TextBox" HorizontalAlignment="Left" Height="78" Margin="57,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" TextChanged="TextUsuario_TextBox_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="57,57,0,0" TextWrapping="Wrap" Text="Texto" VerticalAlignment="Top" FontSize="14"/>
-        <CheckBox x:Name="Negrita_CheckBox" Content="Negrita" HorizontalAlignment="Left" Margin="283,78,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" IsChecked="False" Click="CheckBox_Click_Negrita"/>
-        <CheckBox x:Name="Cursiva_CheckBox" Content="Cursiva" HorizontalAlignment="Left" Margin="407,78,0,0" VerticalAlignment="Top" FontStyle="Italic" FontSize="14" Click="CheckBox_Click_Cursiva" />
+        <CheckBox x:Name="Negrita_CheckBox" Content="Negrita" HorizontalAlignment="Left" Margin="283,78,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" IsChecked="False" Checked="CheckedNegrita" Unchecked="UnCheckedNegrita"/>
+        <CheckBox x:Name="Cursiva_CheckBox" Content="Cursiva" HorizontalAlignment="Left" Margin="407,78,0,0" VerticalAlignment="Top" FontStyle="Italic" FontSize="14" Checked="CheckedCursiva" Unchecked="UnCheckedCursiva" />
         <TextBlock HorizontalAlignment="Left" Margin="550,79,0,0" TextWrapping="Wrap" Text="Color de Texto" VerticalAlignment="Top" FontSize="14"/>
         <RadioButton x:Name="Azul_Radio" Content="Azul" HorizontalAlignment="Left" Margin="681,57,0,0" VerticalAlignment="Top" FontSize="14" Checked="Azul_Radio_Checked" GroupName="Colores"/>
         <RadioButton x:Name="Rojo_Radio" Content="Rojo" HorizontalAlignment="Left" Margin="681,84,0,0" VerticalAlignment="Top" FontSize="14" Checked="Rojo_Radio_Checked" GroupName="Colores"/>
